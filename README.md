@@ -14,20 +14,18 @@ Este repositorio contiene notebooks y código para análisis de datos y desarrol
 ## ⚙️ Configuración del entorno
 
 ### 1. Clonar el repositorio
-
-```bash
 git clone https://github.com/darturo12/Tesis-de-Grado-MIAD-.git
 cd repositorio
-2. Crear entorno virtual
+### 2. Crear entorno virtual
 python -m venv venv
-3. Activar entorno
+### 3. Activar entorno
 Windows
 venv\Scripts\activate
 Mac/Linux
 source venv/bin/activate
-4. Instalar dependencias
+### 4. Instalar dependencias
 pip install -r requirements.txt
-5. Configurar kernel para Jupyter (recomendado)
+### 5. Configurar kernel para Jupyter (recomendado)
 pip install ipykernel
 python -m ipykernel install --user --name=venv --display-name "Python (venv)"
 

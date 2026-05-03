@@ -15,6 +15,7 @@ Este repositorio contiene notebooks y código para análisis de datos y desarrol
 
 ### 1. Clonar el repositorio
 git clone https://github.com/darturo12/Tesis-de-Grado-MIAD-.git
+
 cd repositorio
 ### 2. Crear entorno virtual
 python -m venv venv

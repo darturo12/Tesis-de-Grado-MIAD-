@@ -46,11 +46,9 @@ Luego, en el notebook, seleccionar el kernel Python (venv).
 
 ## ▶️ Uso del proyecto
 
-Los notebooks se encuentran en la carpeta correspondiente (por ejemplo: Modelos_ML/)
-
-Ejecutar las celdas en orden
-
-Verificar que el kernel activo sea el correcto (venv)
+* Los notebooks se encuentran en la carpeta correspondiente (por ejemplo: Modelos_ML/)
+* Ejecutar las celdas en orden
+* Verificar que el kernel activo sea el correcto (venv)
 
 ---
 
@@ -74,20 +72,18 @@ git push
 
 Este repositorio no incluye:
 
-Entornos virtuales (venv/)
-
-Archivos temporales (__pycache__/)
-
-Checkpoints de Jupyter (.ipynb_checkpoints/)
+* Entornos virtuales (venv/)
+* Archivos temporales (__pycache__/)
+* Checkpoints de Jupyter (.ipynb_checkpoints/)
 
 ---
 
 ## 📌 Buenas prácticas
 
-No trabajar directamente sobre la rama principal (master)
-Crear una rama para cada cambio o desarrollo
-Hacer commits claros y frecuentes
-Mantener actualizado el archivo requirements.txt
+* No trabajar directamente sobre la rama principal (master)
+* Crear una rama para cada cambio o desarrollo
+* Hacer commits claros y frecuentes
+* Mantener actualizado el archivo requirements.txt
 
 ---
 
@@ -112,15 +108,13 @@ Crear un Pull Request en GitHub
 
 ## ⚠️ Solución de problemas comunes
 
-Error: módulos no encontrados
-Verificar que el entorno virtual esté activado
-Confirmar que se instalaron las dependencias correctamente
-Validar que el notebook esté usando el kernel correcto
-Validar entorno activo
+### Error: módulos no encontrados
+* Verificar que el entorno virtual esté activado
+* Confirmar que se instalaron las dependencias correctamente
+* Validar que el notebook esté usando el kernel correcto
 
----
-
-## Dentro de Python:
+### Validar entorno activo
+Dentro de Python:
 ```bash
 import sys
 print(sys.executable)

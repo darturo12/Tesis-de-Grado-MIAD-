@@ -92,7 +92,9 @@ print(sys.executable)
 Debe apuntar al entorno venv.
 
 ## 📁 Estructura del proyecto
+
 repo/
+│
 │
 ├── Data/
 ├── Modelos_ML/

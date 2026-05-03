@@ -93,8 +93,8 @@ Debe apuntar al entorno venv.
 
 ## 📁 Estructura del proyecto
 
+```text
 repo/
-│
 │
 ├── Data/
 ├── Modelos_ML/
@@ -103,6 +103,9 @@ repo/
 ├── requirements.txt
 ├── .gitignore
 └── README.md
+```
+
+
 
 
 ## 📌 Notas finales

@@ -31,13 +31,15 @@ python -m ipykernel install --user --name=venv --display-name "Python (venv)"
 
 Luego, en el notebook, seleccionar el kernel Python (venv).
 
-▶️ Uso del proyecto
+## ▶️ Uso del proyecto
+
 Los notebooks se encuentran en la carpeta correspondiente (por ejemplo: Modelos_ML/)
 Ejecutar las celdas en orden
 Verificar que el kernel activo sea el correcto (venv)
-🔁 Actualización de dependencias
 
-Si se agregan nuevas librerías:
+## 🔁 Actualización de dependencias
+
+Si se agregan nuevas librerías se debe actualizar el archivo de requirements.txt, asi:
 
 pip install nombre_libreria
 pip freeze > requirements.txt
@@ -47,19 +49,24 @@ Luego actualizar el repositorio:
 git add requirements.txt
 git commit -m "Actualiza dependencias"
 git push
-🚫 Archivos ignorados
+
+## 🚫 Archivos ignorados
 
 Este repositorio no incluye:
 
 Entornos virtuales (venv/)
 Archivos temporales (__pycache__/)
 Checkpoints de Jupyter (.ipynb_checkpoints/)
-📌 Buenas prácticas
+
+## 📌 Buenas prácticas
+
 No trabajar directamente sobre la rama principal (master)
 Crear una rama para cada cambio o desarrollo
 Hacer commits claros y frecuentes
 Mantener actualizado el archivo requirements.txt
-👥 Flujo de trabajo colaborativo
+
+## 👥 Flujo de trabajo colaborativo
+
 Crear una nueva rama:
 git checkout -b mi-rama
 Realizar cambios y guardar:
@@ -68,21 +75,23 @@ git commit -m "Descripción del cambio"
 Subir la rama:
 git push origin mi-rama
 Crear un Pull Request en GitHub
-⚠️ Solución de problemas comunes
+
+## ⚠️ Solución de problemas comunes
+
 Error: módulos no encontrados
 Verificar que el entorno virtual esté activado
 Confirmar que se instalaron las dependencias correctamente
 Validar que el notebook esté usando el kernel correcto
 Validar entorno activo
 
-Dentro de Python:
+## Dentro de Python:
 
 import sys
 print(sys.executable)
 
 Debe apuntar al entorno venv.
 
-📁 Estructura del proyecto
+## 📁 Estructura del proyecto
 repo/
 │
 ├── Data/
@@ -94,7 +103,7 @@ repo/
 └── README.md
 
 
-📌 Notas finales
+## 📌 Notas finales
 
 Este proyecto está diseñado para ser reproducible.
 Cualquier usuario debería poder ejecutar el código siguiendo los pasos anteriores sin configuraciones adicionales.

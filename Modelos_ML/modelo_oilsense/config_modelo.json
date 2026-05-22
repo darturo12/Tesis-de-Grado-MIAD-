@@ -1,0 +1,97 @@
+{
+    "modelo": "LightGBM_Calibrado",
+    "version": "1.0",
+    "fecha_entrenamiento": "20260520_2113",
+    "umbral_decision": 0.5,
+    "idx_critico": 5,
+    "clases": [
+        "Abnormal Combustion",
+        "Coolant Entry",
+        "Dust Entry",
+        "Fluid Condition Deteriorating",
+        "Fuel Entry",
+        "High Wear Metals",
+        "No Fault Identified",
+        "Questionable Sample Results"
+    ],
+    "n_clases": 8,
+    "n_features": 26,
+    "features": [
+        "Boro (ppm)",
+        "Calcio (ppm)",
+        "Cinc (ppm)",
+        "Fosforado (ppm)",
+        "Magnesio (ppm)",
+        "Molibdeno (ppm)",
+        "Agua (%)",
+        "Dilución por combustible (%)",
+        "Hollín JOAP (Abs/cm)",
+        "Nitración JOAP (Abs/cm)",
+        "Oxidación JOAP (Abs/cm)",
+        "Silicio (ppm)",
+        "Sodio (ppm)",
+        "Sulfatación JOAP (Abs/cm)",
+        "Viscosidad @ 100°C (cSt)",
+        "Aluminio (ppm)",
+        "Cobre (ppm)",
+        "Cromo (ppm)",
+        "Estaño (ppm)",
+        "Hierro (ppm)",
+        "Plomo (ppm)",
+        "SACODE_Salud",
+        "SACODE_Desgaste",
+        "SACODE_Contaminacion",
+        "SACODE_General",
+        "Flota"
+    ],
+    "cols_numericas": [
+        "Boro (ppm)",
+        "Calcio (ppm)",
+        "Cinc (ppm)",
+        "Fosforado (ppm)",
+        "Magnesio (ppm)",
+        "Molibdeno (ppm)",
+        "Agua (%)",
+        "Dilución por combustible (%)",
+        "Hollín JOAP (Abs/cm)",
+        "Nitración JOAP (Abs/cm)",
+        "Oxidación JOAP (Abs/cm)",
+        "Silicio (ppm)",
+        "Sodio (ppm)",
+        "Sulfatación JOAP (Abs/cm)",
+        "Viscosidad @ 100°C (cSt)",
+        "Aluminio (ppm)",
+        "Cobre (ppm)",
+        "Cromo (ppm)",
+        "Estaño (ppm)",
+        "Hierro (ppm)",
+        "Plomo (ppm)"
+    ],
+    "cols_sacode": [
+        "SACODE_Salud",
+        "SACODE_Desgaste",
+        "SACODE_Contaminacion",
+        "SACODE_General",
+        "Flota"
+    ],
+    "orden_sacode_map": {
+        "Normal": 0,
+        "Advertencia": 1,
+        "Crítico": 2
+    },
+    "metricas_test": {
+        "F1 Weighted (Test)": 0.9642,
+        "F1 Crítico (Test)": 0.7692,
+        "Recall Crítico (Test)": 0.8511,
+        "AUC-ROC (Test)": 0.9896,
+        "Accuracy (Test)": 0.9648
+    },
+    "flotas_entrenadas": [
+        "Flota_1",
+        "Flota_2",
+        "Flota_3"
+    ],
+    "reglas_negocio": [
+        "RN-01: No Fault Identified con severidad Warning/Critical → corregido a Normal"
+    ]
+}
